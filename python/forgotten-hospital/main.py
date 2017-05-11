@@ -9,10 +9,10 @@ answers_phone = ''
 
 def get_inventory():
     if len(inventory) == 0:
-        print 'You have nothing in your inventory'
+        print 'You have nothing in your inventory.'
     else:
         for item in inventory:
-            print item
+            print item, ', '
 
 
 def convert_input(input):
@@ -27,6 +27,7 @@ def incorrect_input(func):
 def pickup_item(item):
     if len(inventory) < 4:
         inventory.append(item)
+        print 'You have', (4 - len(inventory)), 'spaces left in your inventory.'
     else:
         print 'You do not have enough room, would you like to drop an item? (Y/N)'
 
@@ -102,6 +103,12 @@ def start_game():
     uses_phone()
     print 'You step backwards, your eyes never leaving the phone, wondering if this was all a dream or some twisted ' \
           'nightmare.'
+    print 'In the distance you hear footsteps ominously growing closer and closer. You rapidly hunt for a place to ' \
+          'hide. You see a locker in the corner and sprint towards it. Right as you grab the handle you feel a cold ' \
+          'big hand firmly grab your shoulder. Horrified you turn around and see that it is the same figure from ' \
+          'before. The figure has a ghastly smile across his scarred face, \'There you are!\'. Fear overwhelms you ' \
+          'as the hairs on your back stand high like soldiers standing in formation. The figure raises his hand and ' \
+          'slams it across your face. In a flash everything goes back.'
 
 
 start_game()
