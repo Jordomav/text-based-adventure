@@ -94,21 +94,21 @@ def start_game():
         use_knife_on_figure()
     print 'The figure grabs you throwing you both to the ground. ' \
           'A distant voice screams an inaudible sentence and the figure recoils as if in pain. ' \
-          'Wailing the figure slowly crawls away. Cautiously you look around and see numbered rooms.' \
+          'Wailing the figure slowly crawls away as you cautiously you look around and see numbered rooms. \n\n' \
           'Standing up you see a light on down the hall. Walking towards the glow of the light the screaming of the ' \
           'inaudible voice grows louder and louder. You can hear more and more people screaming louder and louder. ' \
-          'Upon reaching the light you slowly lean your head in and see a phone in the corner. Carefully you ' \
+          'Upon reaching the light you slowly lean your head in and see a phone in the corner. \n\nCarefully you ' \
           'approach the phone. In an instant the screaming that encircled you ends. For a moment there is a peaceful ' \
           'silence. Suddenly your moment of peace is ended as the phone springs to life.'
     uses_phone()
     print 'You step backwards, your eyes never leaving the phone, wondering if this was all a dream or some twisted ' \
-          'nightmare.'
-    print 'In the distance you hear footsteps ominously growing closer and closer. You rapidly hunt for a place to ' \
-          'hide. You see a locker in the corner and sprint towards it. Right as you grab the handle you feel a cold ' \
-          'big hand firmly grab your shoulder. Horrified you turn around and see that it is the same figure from ' \
-          'before. The figure has a ghastly smile across his scarred face, \'There you are!\'. Fear overwhelms you ' \
-          'as the hairs on your back stand high like soldiers standing in formation. The figure raises his hand and ' \
-          'slams it across your face. In a flash everything goes back.'
+          'nightmare. \n\n In the distance you hear footsteps ominously growing closer and closer. You rapidly ' \
+          'hunt for a place to hide. You see a locker in the corner and sprint towards it. \n\n Right as you grab ' \
+          'the handle you feel a cold big hand firmly grab your shoulder. Horrified you turn around and see that it ' \
+          'is the same figure from before. The figure has a ghastly smile across his scarred face, ' \
+          '\'There you are!\'. Fear overwhelms you as the hairs on your back stand high like soldiers standing ' \
+          'in formation. The figure raises his hand and slams it across your face. In a flash everything goes back. ' \
+          '\n\n '
 
 
 start_game()
