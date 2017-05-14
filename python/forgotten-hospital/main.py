@@ -5,6 +5,7 @@ pulls_chain = ''
 gets_knife = ''
 attacks_with_knife = ''
 answers_phone = ''
+gets_up = ''
 
 
 def get_inventory():
@@ -30,6 +31,14 @@ def pickup_item(item):
         print 'You have', (4 - len(inventory)), 'spaces left in your inventory.'
     else:
         print 'You do not have enough room, would you like to drop an item? (Y/N)'
+
+
+def check_item(item):
+    for inv in inventory:
+        if inv == item:
+            return true
+        else:
+            return false
 
 
 def interact_chain():
@@ -79,6 +88,18 @@ def uses_phone():
         incorrect_input(uses_phone)
 
 
+def opens_box():
+    global gets_up
+    gets_batteries = raw_input('Will you open it? (Y/N)')
+    if convert_input(gets_batteries) == 'y' or convert_input(gets_batteries) == 'yes':
+        print 'You pickup the batteries.'
+        pickup_item('Batteries')
+    elif convert_input(gets_batteries) == 'n' or convert_input(gets_batteries) == 'no':
+        print 'You cautiously look at the box and then back away'
+    else:
+        incorrect_input(opens_box)
+
+
 def start_game():
     global pulls_chain
     global gets_knife
@@ -108,7 +129,13 @@ def start_game():
           'is the same figure from before. The figure has a ghastly smile across his scarred face, ' \
           '\'There you are!\'. Fear overwhelms you as the hairs on your back stand high like soldiers standing ' \
           'in formation. The figure raises his hand and slams it across your face. In a flash everything goes back. ' \
-          '\n\n '
+          '\n\n You awaken to a ringing noise blaring in your head, slowly you open your eyes as a blinding light ' \
+          'accosts you. Looking to your left you see you are bound to a chair. Hurriedly you begin to rock back and ' \
+          'forth till the chair tips over. As you sit up you hit your head on the corner of a table.'
+    if (convert_input(gets_knife) == 'y' or convert_input(gets_knife) == 'yes') and check_item('Knife'):
+        'You see the knife on the table and grab it.'
+    print 'To the right you see a closed box.'
+    opens_box()
 
 
 start_game()
