@@ -1,6 +1,5 @@
 player = raw_input('Please enter your player name: ')
 inventory = []
-
 pulls_chain = ''
 gets_knife = ''
 attacks_with_knife = ''
